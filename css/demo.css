@@ -1,0 +1,124 @@
+@charset "utf-8";
+/*css reset start*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #efefef;
+}
+.lf{
+	float:left;
+}
+.rt{
+	float:right;
+}
+.clear{
+	clear:both;
+}
+a,a:hover{
+	text-decoration: none;
+}
+li{
+	list-style:none;
+}
+.ct{
+	text-align: center;
+}
+/*css reset end*/
+/*header start*/
+.header{
+	width:100%;
+	height:50px;
+	background: #000;
+	position:fixed;
+	z-index:1000;
+	top:0;
+}
+.header>ul{
+	width:270px;
+	margin:auto;
+}
+.header>ul>li{
+	float:left;
+	/*line-height: 50px;*/
+}
+.header>ul>li>a{
+	display:block;
+	width:54px;
+	text-align: center;
+	font-weight: 800;
+	font-size: 1.2em;
+	color:#efefef;
+}
+/*header end*/
+/*img  start*/
+.img{
+	height:400px;
+	background: url(../images/shitou.jpg) no-repeat 0 50px;
+	background-size: cover;
+	background-position: center;
+}
+/*img end*/
+/*content start*/
+.cont p{
+	padding:14px 10px;
+}
+.cont span{
+	padding-right:20px;
+}
+.mgin{
+	padding-top:60px;
+}
+.work-cont .indent{
+	margin-left: 70px;
+}
+#work{
+	background: #2c3e50;
+	padding:60px 0;
+	color:#efefef;
+}
+h4{
+	font-weight: 600;
+}
+h5{
+	font-weight: 600;
+}
+/*技能 start*/
+.art{
+	background: #2c3e50;
+	color:#efefef;
+	padding-bottom: 60px;	
+}
+/*技能 end*/
+/*contact start*/
+.contact{
+	background: #2f2f2f;
+	color:#efefef;
+	padding-bottom: 60px;
+}
+.lianjie a{
+	color:#efefef;
+}
+.lianjie a:hover{
+	color:#efefef;
+}
+/*contact end*/
+/*content end*/
+/*footer start*/
+.footer{
+	height:68px;
+	background: #222;
+	padding-top:15px;
+	text-align: right;
+	color:#efefef;
+	line-height: 34px;
+}
+.footer a{
+	color:#f85c37;
+}
+.footer a:hover{
+	color:#7b7b7b;
+}
+/*footer end*/
+
