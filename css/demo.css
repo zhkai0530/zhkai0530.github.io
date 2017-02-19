@@ -52,7 +52,7 @@ li{
 	color:#efefef;
 	border-left:1px solid #222;
 }
-.header>ul>li>a:nth-last-child{
+.header>ul>li>a:nth-last-child(1){
 	border-right:1px solid #222;
 }
 .header img{
