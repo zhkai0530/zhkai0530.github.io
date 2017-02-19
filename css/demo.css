@@ -50,6 +50,10 @@ li{
 	font-weight: 800;
 	font-size: 1.2em;
 	color:#efefef;
+	border-left:1px solid #222;
+}
+.header>ul>li>a:nth-last-child{
+	border-right:1px solid #222;
 }
 .header img{
 	margin:auto;
