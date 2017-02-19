@@ -36,7 +36,7 @@ li{
 	top:0;
 }
 .header>ul{
-	width:270px;
+	width:320px;
 	margin:auto;
 }
 .header>ul>li{
@@ -45,11 +45,14 @@ li{
 }
 .header>ul>li>a{
 	display:block;
-	width:54px;
+	width:64px;
 	text-align: center;
 	font-weight: 800;
 	font-size: 1.2em;
 	color:#efefef;
+}
+.header img{
+	margin:auto;
 }
 /*header end*/
 /*img  start*/
