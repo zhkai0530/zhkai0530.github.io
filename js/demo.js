@@ -11,7 +11,7 @@ $(function(){
 		var scrollheight = $(window).scrollTop();
 		var mingan = seeclient*0.2;
 		for(var i = 0;i<img_par.length;i++){
-			var img = $("img");
+			var img = $("#show img");
 			if(img_par[i].dataset){
 				img_src = img_par[i].dataset.src;
 			}else{
@@ -19,6 +19,7 @@ $(function(){
 			}
 			if(scrollheight>img_par[i].offsetTop-seeclient +mingan && !img_par[i].isload){
 				img[i].src = img_src;
+				img_par[i].style.cssText = "transition:opacity 2s;opacity:1;";
 			}
 		}
 	}
