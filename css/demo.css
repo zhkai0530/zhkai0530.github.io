@@ -31,9 +31,9 @@ li{
 	width:100%;
 	height:50px;
 	background: #000;
-	position:fixed;
+	/* position:fixed;
 	z-index:1000;
-	top:0;
+	top:0; */
 }
 .header>ul{
 	width:320px;
@@ -65,6 +65,26 @@ li{
 	background: url(../images/shitou.jpg) no-repeat 0 50px;
 	background-size: cover;
 	background-position: center;
+	line-height: 400px;
+}
+.img p{
+	font-size:7.625rem;
+	color:#f0f0f0;
+	font-family: "华文行楷";
+	line-height: 200px;
+	margin:0 auto;
+	text-align: center;
+	text-shadow: -4px 7px 6px darkslategrey;
+}
+.img :first-child{
+	text-indent: -88px;
+	transform: rotate(2deg);
+	-mos-transform:ratate(2deg);
+	-o-transform: rotate(2deg);
+}
+.img :last-child{
+	text-indent: 120px;
+	transform: rotate(2deg);
 }
 /*img end*/
 /*content start*/
