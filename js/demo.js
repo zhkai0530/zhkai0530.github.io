@@ -1,10 +1,25 @@
 $(function(){
+	
+	var $html = $('html');
+	var $window = $('window');
+	var $body = $('body');
+	var psdsize =960;//这里表示我设计图的宽度
+	var htmlfont = $body.width()/psdsize*16 + 'px';//计算字体大小
+	$html.css('font-size', htmlfont);//设置字体大小
+	$body.css('opacity', 1);//针对一些手机浏览器的默认样式
+	//屏幕尺寸修改时，改变其大小
+	$(window).resize(function(event) {
+		htmlfont = $body.width()/psdsize*16+'px';
+		$html.css('font-size', 'htmlfont');
+	  });
+	
 	var canvas_arr = [0.8,0.85,0.6,0.9,0.74,0.9,0.65];//基数数组，从0--0.99设置，顺序：JavaScript，JQ，bootstrap，HTML/CSS，Photoshop，Dreamweaver
 	var huabi = 5;
 	var step=30;//80步骤完成
 	var canvas = document.getElementsByTagName("canvas");
 	var on_off = true;
 	var img_par = $(".lazyload");
+	var navHeight = $(".header").height();
 /*封装img lazyload start*/
 	function aftload(arr){
 		var seeclient = document.documentElement.clientHeight || document.body.clientHeight;
@@ -85,4 +100,15 @@ $(function(){
 		console.log(id_name)
 	})
 /*锚点动画 end*/
+/*导航栏 动态定位 start*/
+function navPosition(v){
+	if($(window).scrollTop() >= v){
+		alert(1)
+	}
+}
+navPosition(navHeight)
+window.scroll = function(){
+	console.log($(window).scrollTop())
+}
+/*导航栏 动态定位 end*/
 })
