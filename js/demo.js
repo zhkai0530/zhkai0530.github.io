@@ -101,14 +101,14 @@ $(function(){
 	})
 /*锚点动画 end*/
 /*导航栏 动态定位 start*/
-function navPosition(v){
-	if($(window).scrollTop() >= v){
-		alert(1)
-	}
-}
-navPosition(navHeight)
-window.scroll = function(){
-	console.log($(window).scrollTop())
-}
+// function navPosition(v){
+// 	if($(window).scrollTop() >= v){
+// 		alert(1)
+// 	}
+// }
+// navPosition(navHeight)
+// window.scroll = function(){
+// 	console.log($(window).scrollTop())
+// }
 /*导航栏 动态定位 end*/
 })
